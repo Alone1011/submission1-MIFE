@@ -1,0 +1,103 @@
+/* src/components/ProfileCard.css */
+.profile-card {
+  width: 350px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1.5rem;
+  border: 3px solid #f0f0f0;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.name {
+  margin: 0;
+  color: #2d3436;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.tagline {
+  margin: 0.3rem 0 0;
+  color: #636e72;
+  font-size: 0.9rem;
+}
+
+.contact-details {
+  border-top: 1px solid #eee;
+  padding-top: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  width: 25px;
+  text-align: center;
+  color: #0984e3;
+}
+
+.detail-content {
+  margin: 0;
+  color: #2d3436;
+  font-size: 0.95rem;
+}
+
+/* Hover Effects */
+.detail-content:hover {
+  color: #0984e3;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .profile-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.icon svg {
+  width: 20px;
+  height: 20px;
+  color: #2d3436; /* Warna default */
+}
+
+/* Warna khusus untuk ikon tertentu */
+.detail-item:nth-child(3) .icon svg {
+  /* Instagram */
+  color: #e1306c;
+}
+
+.detail-item:nth-child(2) .icon svg {
+  /* Email */
+  color: #ea4335;
+}
+
+.detail-item:hover .icon svg {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
