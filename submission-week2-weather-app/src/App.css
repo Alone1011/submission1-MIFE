@@ -1,0 +1,88 @@
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #3674b5 25%, #d1f8ef 100%);
+  padding: 2rem;
+}
+
+.weather-app {
+  background: #a1e3f9;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; /* BATASI ukuran agar pas di desktop */
+  text-align: center;
+}
+
+/* Atur tampilan mobile */
+@media (max-width: 768px) {
+  .weather-app {
+    max-width: 90%; /* Supaya di mobile tidak terlalu mepet */
+    padding: 1.5rem;
+  }
+}
+
+/* Mobile Layout tetap seperti sebelumnya */
+
+form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+input {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 70%;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.weather-result {
+  margin-top: 1.5rem;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+  background: #acacac83;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.error {
+  color: #dc3545;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background: #f8d7da;
+  border-radius: 5px;
+}
